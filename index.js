@@ -1,6 +1,7 @@
 const sideMenu = document.querySelector('aside');
 const menuBtn = document.getElementById('menu-btn');
 const closeBtn = document.getElementById('close-btn');
+const sideMenuButton = document.querySelectorAll(".sidebar a");
 
 const darkMode = document.querySelector('.dark-mode');
 
@@ -50,9 +51,23 @@ function handleButtonClick(event) {
 	// Add the active class to the clicked button
 	clickedButton.classList.add("active");
 }
+function handleSidebarButtonClick(event) {
+	const screenWidth = window.innerWidth;
+	if (screenWidth <= 768) {
+		// Adjust this value based on your preferred screen width
+		sideMenu.style.display = "none";
+	}
+}
 
 // Add click event listeners to each button
 const buttons = document.querySelectorAll(".sidebar a");
 buttons.forEach((button) => {
 	button.addEventListener("click", handleButtonClick);
 });
+
+sideMenuButton.forEach((button) =>
+	button.addEventListener("click", handleSidebarButtonClick)
+);
+
+window.addEventListener('resize', checkScreenSize);
+window.addEventListener('load', checkScreenSize); // Ensure it's checked when the page loads initially
