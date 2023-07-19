@@ -69,5 +69,20 @@ sideMenuButton.forEach((button) =>
 	button.addEventListener("click", handleSidebarButtonClick)
 );
 
-window.addEventListener('resize', checkScreenSize);
-window.addEventListener('load', checkScreenSize); // Ensure it's checked when the page loads initially
+let valueDisplay = document.querySelectorAll(".number");
+let interval = 70000;
+
+valueDisplay.forEach((value) => {
+	let startValue = 0;
+	let endValue = parseInt(value.getAttribute("data-value"));
+	let duration = Math.floor(interval / endValue);
+	let counter = setInterval(function () {
+		startValue += 1;
+		value.textContent = startValue;
+		if (startValue == endValue) {
+			clearInterval(counter)
+		}
+	},duration );
+}
+
+);
