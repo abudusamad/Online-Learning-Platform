@@ -92,9 +92,15 @@ small{
 p{
     color: var(--color-dark-variant);
 }
+.progresss span{
+     color: var(--color-dark-variant);
+     font-weight: 600;
+    font-size: 1rem;
+}
 
 b{
     color: var(--color-dark);
+    
 }
 
 .text-muted{

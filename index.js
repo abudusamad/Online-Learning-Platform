@@ -2,6 +2,8 @@ const sideMenu = document.querySelector('aside');
 const menuBtn = document.getElementById('menu-btn');
 const closeBtn = document.getElementById('close-btn');
 const sideMenuButton = document.querySelectorAll(".sidebar a");
+let valueDisplay = document.querySelectorAll(".number");
+// let setInterval = document.querySelectorAll(".percent")
 
 const darkMode = document.querySelector('.dark-mode');
 
@@ -69,7 +71,9 @@ sideMenuButton.forEach((button) =>
 	button.addEventListener("click", handleSidebarButtonClick)
 );
 
-let valueDisplay = document.querySelectorAll(".number");
+
+
+
 let interval = 70000;
 
 valueDisplay.forEach((value) => {
@@ -86,3 +90,5 @@ valueDisplay.forEach((value) => {
 }
 
 );
+
+
