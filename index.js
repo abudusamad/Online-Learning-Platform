@@ -31,3 +31,28 @@ Orders.forEach(order => {
     tr.innerHTML = trContent;
     document.querySelector('table tbody').appendChild(tr);
 });
+
+function handleButtonClick(event) {
+	// Get the clicked button element
+	const clickedButton = event.target;
+
+	// Get the sidebar element
+	const sidebar = document.querySelector(".sidebar");
+
+	// Get the currently active button (if any)
+	const activeButton = sidebar.querySelector(".active");
+
+	// Remove the active class from the previously active button
+	if (activeButton) {
+		activeButton.classList.remove("active");
+	}
+
+	// Add the active class to the clicked button
+	clickedButton.classList.add("active");
+}
+
+// Add click event listeners to each button
+const buttons = document.querySelectorAll(".sidebar a");
+buttons.forEach((button) => {
+	button.addEventListener("click", handleButtonClick);
+});
