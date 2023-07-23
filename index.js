@@ -39,7 +39,6 @@ function handleButtonClick(event) {
 	// Get the clicked button element
 	const clickedButton = event.target;
 
-	// Get the sidebar element
 	const sidebar = document.querySelector(".sidebar");
 
 	// Get the currently active button (if any)
@@ -50,7 +49,6 @@ function handleButtonClick(event) {
 		activeButton.classList.remove("active");
 	}
 
-	// Add the active class to the clicked button
 	clickedButton.classList.add("active");
 }
 function handleSidebarButtonClick(event) {
