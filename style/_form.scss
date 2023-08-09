@@ -10,12 +10,14 @@ html,body{
   place-items:center;
 
 }
+@import "./variable";
+
 .main_div{
   width: 365px;
   background: #fff;
   padding: 30px;
   border-radius: 5px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 10px rgba(-1, -1, -1,-1, 0.15);
 }
 .main_div .title{
   text-align: center;
@@ -35,7 +37,7 @@ html,body{
   text-align: center;
   border-radius: 5px;
   font-size: 20px;
-  color: #fff;
+  color: $bs-white;
   text-decoration: none;
   transition: all 0.3s linear;
 }
@@ -77,7 +79,7 @@ form .input_box{
   transition: all 0.3s ease;
 }
 .input_box input:focus{
-  border-color: #be2edd;
+  border-color: $bs-red;
 }
 .input_box .icon{
   position: absolute;
@@ -102,11 +104,11 @@ form .option_div{
 }
 .option_div .forget_div a{
   font-size: 16px;
-  color: #be2edd;
+  color: $bs-red;
 }
 .button input{
   padding-left: 0;
-  background: #be2edd;
+  background: $bs-red;
   color: #fff;
   border: none;
   font-size: 20px;
@@ -115,14 +117,14 @@ form .option_div{
   transition: all 0.3s linear;
 }
 .button input:hover{
-  background: #a720c5;
+  background:$bs-red;
 }
 form .sign_up{
   text-align: center;
   margin-top: 25px;
 }
 .sign_up a{
-  color: #be2edd;
+  color: $bs-red;
 }
 form a{
   text-decoration: none;

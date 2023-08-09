@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -91,7 +92,7 @@ form .input_box {
 }
 
 .input_box input:focus {
-  border-color: #be2edd;
+  border-color: #dc3545;
 }
 
 .input_box .icon {
@@ -121,12 +122,12 @@ form .option_div {
 
 .option_div .forget_div a {
   font-size: 16px;
-  color: #be2edd;
+  color: #dc3545;
 }
 
 .button input {
   padding-left: 0;
-  background: #be2edd;
+  background: #dc3545;
   color: #fff;
   border: none;
   font-size: 20px;
@@ -136,7 +137,7 @@ form .option_div {
 }
 
 .button input:hover {
-  background: #a720c5;
+  background: #dc3545;
 }
 
 form .sign_up {
@@ -145,7 +146,7 @@ form .sign_up {
 }
 
 .sign_up a {
-  color: #be2edd;
+  color: #dc3545;
 }
 
 form a {
