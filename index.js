@@ -72,7 +72,7 @@ sideMenuButton.forEach((button) =>
 
 
 
-let interval = 70000;
+let interval = 7000;
 
 valueDisplay.forEach((value) => {
 	let startValue = 0;
