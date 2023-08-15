@@ -3,7 +3,7 @@ const menuBtn = document.getElementById("menu-btn");
 const closeBtn = document.getElementById("close-btn");
 const sideMenuButton = document.querySelectorAll(".sidebar");
 let valueDisplay = document.querySelectorAll(".number");
-// let setInterval = document.querySelectorAll(".percent")
+let setInterval = document.querySelectorAll(".percent")
 
 const darkMode = document.querySelector(".dark-mode");
 
