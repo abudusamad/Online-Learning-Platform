@@ -26,8 +26,6 @@ secondNumber = 45
 
 result = secondNumber / firstNumber 
 
-
-
 // mutiplication
 
 firstNumber = 23
