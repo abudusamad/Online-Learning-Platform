@@ -3,7 +3,7 @@ const menuBtn = document.getElementById("menu-btn");
 const closeBtn = document.getElementById("close-btn");
 const sideMenuButton = document.querySelectorAll(".sidebar");
 let valueDisplay = document.querySelectorAll(".number");
-let setInterval = document.querySelectorAll(".percent")
+let setInterval = document.querySelectorAll(".percent");
 
 const darkMode = document.querySelector(".dark-mode");
 
@@ -38,50 +38,4 @@ Orders.forEach((order) => {
     `;
 	tr.innerHTML = trContent;
 	document.querySelector("table tbody").appendChild(tr);
-});
-
-function handleButtonClick(event) {
-	const clickedButton = event.target;
-
-	const sidebar = document.querySelector(".sidebar");
-
-	const activeButton = sidebar.querySelector(".active");
-
-	if (activeButton) {
-		activeButton.classList.remove("active");
-	}
-
-	clickedButton.classList.add("active");
-}
-function handleSidebarButtonClick(event) {
-	const screenWidth = window.innerWidth;
-	if (screenWidth <= 768) {
-		// Adjust this value based on your preferred screen width
-		sideMenu.style.display = "none";
-	}
-}
-
-// Add click event listeners to each button
-const buttons = document.querySelectorAll(".sidebar a");
-buttons.forEach((button) => {
-	button.addEventListener("click", handleButtonClick);
-});
-
-sideMenuButton.forEach((button) =>
-	button.addEventListener("click", handleSidebarButtonClick)
-);
-
-let interval = 70000;
-
-valueDisplay.forEach((value) => {
-	let startValue = 0;
-	let endValue = parseInt(value.getAttribute("data-value"));
-	let duration = Math.floor(interval / endValue);
-	let counter = setInterval(function () {
-		startValue += 1;
-		value.textContent = startValue;
-		if (startValue == endValue) {
-			clearInterval(counter);
-		}
-	}, duration);
 });
