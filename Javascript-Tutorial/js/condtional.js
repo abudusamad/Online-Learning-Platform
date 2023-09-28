@@ -9,3 +9,16 @@ if (iceCreame === "cholcate") {
 else {
     alert("Hey, I thought is an icrecream oo")
 }
+
+
+
+///Fuctions
+
+function mutiply(num1, num2) {
+    let  result = num1 * num2;
+    return result
+}
+
+mutiply(4, 7);
+mutiply(23, 56);
+
