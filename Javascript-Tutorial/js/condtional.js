@@ -52,3 +52,9 @@ function setMyName() {
     localStorage.setItem("name", myName)
     myHeading.textContent = `My name is ${myName}`;
 }
+if (!localStorage.getItem("name")) {
+    setMyName();
+} else {
+    const storeName = localStorage.getItem("name")
+    myHeading.textContent= `My name is ${storeName}`
+}
