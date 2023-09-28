@@ -24,6 +24,9 @@ mutiply(23, 56);
 
 // Event
 
+const myHeading = document.querySelector("h1")
+const myButton  = document.querySelector("button")
+
 document.querySelector("html").addEventListener("click",  () => { //adding an arrow function rather than anonymous function
     alert("OOOps Stop poking me ");
 });
@@ -42,4 +45,10 @@ if(imgSrc === "../../images/firefox-icon.png" )
     myImage.setAttribute("src", "../../images/firefox-icon.png")
     }
     
+}
+
+function setMyName() {
+    const myName = prompt("Enter your name !")
+    localStorage.setItem("name", myName)
+    myHeading.textContent = `My name is ${myName}`;
 }
