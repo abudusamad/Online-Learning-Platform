@@ -27,3 +27,19 @@ mutiply(23, 56);
 document.querySelector("html").addEventListener("click",  () => { //adding an arrow function rather than anonymous function
     alert("OOOps Stop poking me ");
 });
+
+
+
+const myImage = document.querySelector("img")
+
+myImage.onclick = () => {
+    let imgSrc = myImage.getAttribute("src");
+if(imgSrc === "../../images/firefox-icon.png" )
+{
+    myImage.setAttribute("src", "../../images/firefox-icon.png")
+    } else
+{
+    myImage.setAttribute("src", "../../images/firefox-icon.png")
+    }
+    
+}
