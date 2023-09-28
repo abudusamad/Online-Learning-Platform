@@ -22,3 +22,8 @@ function mutiply(num1, num2) {
 mutiply(4, 7);
 mutiply(23, 56);
 
+// Event
+
+document.querySelector("html").addEventListener("click", function () {
+    alert("OOOps Stop poking me ");
+});
