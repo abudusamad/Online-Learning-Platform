@@ -24,6 +24,6 @@ mutiply(23, 56);
 
 // Event
 
-document.querySelector("html").addEventListener("click", function () {
+document.querySelector("html").addEventListener("click",  () => { //adding an arrow function rather than anonymous function
     alert("OOOps Stop poking me ");
 });
