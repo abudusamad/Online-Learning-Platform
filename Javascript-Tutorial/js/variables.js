@@ -1,0 +1,2 @@
+let myVariable;
+myVariable = "Bob";
