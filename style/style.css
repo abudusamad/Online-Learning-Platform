@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"); /* Google Fonts - Poppins */
 * {
   margin: 0;
   padding: 0;
@@ -248,6 +247,7 @@ body {
   font-size: 0.88rem;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   overflow-x: hidden;
   color: var(--color-dark);
@@ -782,11 +782,11 @@ main .recent-orders a {
     width: 83vw;
   }
   main table thead tr th:last-child,
-  main table thead tr th:first-child {
+main table thead tr th:first-child {
     display: none;
   }
   main table tbody tr td:last-child,
-  main table tbody tr td:first-child {
+main table tbody tr td:first-child {
     display: none;
   }
 }
@@ -805,7 +805,13 @@ main .recent-orders a {
     height: 100vh;
     left: -100%;
     display: none;
-    animation: showMenu 0.4s ease forwards;
+    -webkit-animation: showMenu 0.4s ease forwards;
+            animation: showMenu 0.4s ease forwards;
+  }
+  @-webkit-keyframes showMenu {
+    to {
+      left: 0;
+    }
   }
   @keyframes showMenu {
     to {
