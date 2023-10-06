@@ -51,8 +51,9 @@ for (bird of birds) {
 
 function double(number) {
     return number * 2;
+
 }
 
-const numbers = [4, 5, 7, 20, 5];
-const doubled = numbers.map(double);
+const numbers = [3, 5, 67, 8, 89];
+const doubled = numbers.map(double)
 console.log(doubled)
