@@ -28,3 +28,20 @@ buttonA.onclick = () => {
     alert(`Hello ${name} nice to meet you`);
     headingA.textContent= `You're Welcome ${name}`
 }
+
+
+// using splice to remove item from a particular index from an array
+const cities = ["Manchester", "Liverpool", "Edinburgh", "Carlistle"];
+const index = cities.indexOf("Liverpool");
+if (index !== -1) {
+    cities.splice(index, 1)
+}
+
+//Accessing every item of the array using for loop
+
+const birds = ["Parrot", "Falcon", "Owl"]
+
+for (bird of birds) {
+    console.log(bird)
+}
+
