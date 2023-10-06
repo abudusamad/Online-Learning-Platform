@@ -57,3 +57,16 @@ function double(number) {
 const numbers = [3, 5, 67, 8, 89];
 const doubled = numbers.map(double)
 console.log(doubled)
+
+//how to filter array
+
+
+
+function country(city) {
+    return city.length > 8;
+}
+
+const countries = ["Washinton Dc", "Liverpool", "United State of America", "Ghana", "Togo"];
+const longer = countries.filter(country);
+
+console.log(longer)
