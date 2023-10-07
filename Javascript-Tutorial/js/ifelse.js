@@ -17,3 +17,15 @@ function setWeather() {
         para.textContent = "";
     }
 }
+
+
+//using logical operators to replace nested if and else statement
+
+let temperature = 80;
+
+
+if (choice === "sunnyy" && temperature < 86) {
+    para.textContent = `It is ${temperature} degrees outside - nice and sunny. Let's go out to the beach, or the park, and get an ice cream.`
+} else if (choice === "sunny" && temperature >= 86) {
+    para.textContent = `It is ${temperature} degrees outside - Really Hot! If you want to go outside, make sure to put some sunscreen on.`
+}
