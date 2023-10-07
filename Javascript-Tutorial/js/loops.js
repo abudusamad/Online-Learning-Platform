@@ -29,3 +29,12 @@ function draw() {
 }
 
 btn.addEventListener("click", draw);
+
+
+function toUpper(string) {
+   return string.toUpperCase();
+}
+
+const cats = ["Mouse", "Lion", "tiger", "snake", "Leopard", "geraffe"];
+const upperCats = cats.map(toUpper);
+console.log(upperCats)
