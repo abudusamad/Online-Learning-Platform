@@ -31,20 +31,26 @@ body{
 .output li {
   display: block;
   float: left;
-  width: 25%;
+  width: 15%;
   border: 2px solid white;
   padding: 5px;
-  height: 40px;
+  height: 50px;
   background-color: #4a2db6;
   color: white;
+  border-radius: 20px;
+ li{
+    display: none;
+ }
+
 }
+
 
 html {
   font-family: sans-serif;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 26px;
 }
 
 .a11y-label {

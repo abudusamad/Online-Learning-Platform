@@ -22,6 +22,7 @@ function createCalendar(days, choice) {
         const listItem = document.createElement("li");
         listItem.textContent = i;
         list.appendChild(listItem)
+        listItem.style.margin = "auto";
     }
 }
 
