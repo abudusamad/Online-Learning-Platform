@@ -31,6 +31,8 @@ function draw() {
 btn.addEventListener("click", draw);
 
 
+//adding map to find the collection of the item in an array
+
 function toUpper(string) {
    return string.toUpperCase();
 }
@@ -38,3 +40,13 @@ function toUpper(string) {
 const cats = ["Mouse", "Lion", "tiger", "snake", "Leopard", "geraffe"];
 const upperCats = cats.map(toUpper);
 console.log(upperCats)
+
+//adding filter to find a particular letter within the array
+
+
+function lCat(cat) {
+    return cat.startsWith("L");
+}
+
+const filtered = cats.filter(lCat);
+console.log(filtered);
