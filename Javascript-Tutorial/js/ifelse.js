@@ -24,8 +24,24 @@ function setWeather() {
 let temperature = 80;
 
 
-if (choice === "sunnyy" && temperature < 86) {
-    para.textContent = `It is ${temperature} degrees outside - nice and sunny. Let's go out to the beach, or the park, and get an ice cream.`
-} else if (choice === "sunny" && temperature >= 86) {
-    para.textContent = `It is ${temperature} degrees outside - Really Hot! If you want to go outside, make sure to put some sunscreen on.`
+// if (choice === "sunny" && temperature < 86) {
+//     para.textContent = `It is ${temperature} degrees outside - nice and sunny. Let's go out to the beach, or the park, and get an ice cream.`
+// } else if (choice === "sunny" && temperature >= 86) {
+//     para.textContent = `It is ${temperature} degrees outside - Really Hot! If you want to go outside, make sure to put some sunscreen on.`
+// }
+
+const selecting = document.querySelector("select")
+const html = document.querySelector("html")
+document.body.style.padding = "10px";
+
+
+function update(bgColor, textColor) {
+    html.style.backgroundColor = bgColor;
+    html.style.color = textColor;
 }
+
+selecting.addEventListener("change", () => {
+    selecting.value === "black"
+        ? update("black", "white")
+        :update("white", "black")
+})
