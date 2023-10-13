@@ -23,9 +23,9 @@ function draw() {
         ctx.arc(
             random(canvas.width),
             random(canvas.height),
-            random(59, 0,
+            random(59), 0,
                 2 * Math.PI,
-            ) 
+            
 
         )
         ctx.fill();
