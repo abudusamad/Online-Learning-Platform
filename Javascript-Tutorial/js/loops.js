@@ -46,3 +46,11 @@ const toUpperCats = cats.map(toUpper)
 
 
 console.log(toUpperCats)
+
+
+function lowerCat(string) {
+    return string.startsWith("L");
+}
+
+const toLowerCat = cats.filter(lowerCat);
+console.log(toLowerCat)
