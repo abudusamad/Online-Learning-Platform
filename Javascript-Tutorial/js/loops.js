@@ -31,8 +31,6 @@ function draw() {
 btn.addEventListener("click", draw);
 
 
-//adding map to find the collection of the item in an array
-
 function toUpper(string) {
    return string.toUpperCase();
 }
