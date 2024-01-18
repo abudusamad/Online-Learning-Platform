@@ -1,27 +1,32 @@
-let myVariable;
-myVariable = "Bob";
+// let myVariable;
+// myVariable = "Bob";
 
-///String
-myVariable = "Bobs";
+// ///String
+// myVariable = "Bobs";
 
-//Boolean
+// //Boolean
 
-myVariable = false
+// myVariable = false
 
-//Numbers = 
-myVariable = 2343
+// //Numbers =
+// myVariable = 2343
 
-//Array
+// //Array
 
-myVariable = [2, "Bobs", 435, "Kofi ", "bring me the money"]
+// myVariable = [2, "Bobs", 435, "Kofi ", "bring me the money"]
 
-//Objects
+// //Objects
 
-const button = document.querySelector("button");
+// const button = document.querySelector("button");
 
-button.addEventListener("click", updateName);
+// button.addEventListener("click", updateName);
 
-function updateName() {
-    const name = prompt("Enter your name");
-    button.textContent = `Player 1: ${name}`
-}
+// function updateName() {
+//     const name = prompt("Enter your name");
+//     button.textContent = `Player 1: ${name}`
+// }
+
+const obj = {};
+
+obj.x = 4;
+console.log(obj.x);
