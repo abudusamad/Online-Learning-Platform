@@ -56,14 +56,13 @@ var str = "34243.4543";
 var num = parseFloat(str);
 console.log(num);
 
-const btn = document.querySelector("button");
+const btnapp = document.querySelector("button");
 
 function random(num) {
 	return Math.floor(Math.random() * (num + 1));
 }
 
-btn.addEventListener("click", () => {
+btnapp.addEventListener("click", () => {
 	const rndCol = `rgb(${random(255)},${random(255)},${random(255)})`;
 	document.body.style.backgroundColor = rndCol;
 });
->>>>>>> 3ca6b76 (okay)
